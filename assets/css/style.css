@@ -102,6 +102,16 @@ footer {
     margin: 1rem 0;
 }
 
+[class^='card_'] h3{
+    color: var(--blue);
+    padding: 1rem 0;
+}
+
+[class^='card_'] p{
+    color: var(--gray);
+    line-height: 1.8;
+}
+
 /* #endregion utilities */
 
 /* #region header */
@@ -144,9 +154,10 @@ footer {
     background-color: var(--white);
 }
 
-.card_1 {
+.card_1, .card_2 {
     background-color: var(--lighter-blue);
     border-radius: 15px;
+    min-height: 100%;
 }
 
 .left-c {
@@ -176,6 +187,15 @@ footer {
 .right-c {
     width: 30%;
     padding-top: 2rem;
+}
+
+.card_2 {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+span.icon {
+    color: var(--blue);
 }
 
 /* #/demo */
@@ -241,9 +261,6 @@ footer {
         width: calc(100% / 12 * 8);
     }
 
-    #demo .row {
-        justify-content: center;
-    }
 }
 
 
@@ -263,10 +280,6 @@ footer {
 
     .col_lg_8 {
         width: calc(100% / 12 * 8);
-    }
-
-    #demo .row {
-        justify-content: center;
     }
 
 }
