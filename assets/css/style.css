@@ -17,9 +17,21 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--font);
+}
+
 header {
     background-color: var(--blue);
     height: 60px;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
 }
 
 section:nth-child(even) {
@@ -90,8 +102,30 @@ footer {
 /* #region header */
 
 #app_header .container {
+    height: 100%;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    padding: 0.5rem;
+}
+
+#app_header a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.link_list {
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.btn-w {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 /* #endregion header */
