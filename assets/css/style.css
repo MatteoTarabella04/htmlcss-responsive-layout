@@ -34,6 +34,13 @@ header {
     background-color: var(--lighter-blue);
 }
 
+.debug [class^= 'col_'] {
+
+    border: 1px dashed var(--black);
+    height: 200px;
+    background-color: orange;
+}
+
 /* #endregion debug */
 
 /* #region utilities */
@@ -52,6 +59,15 @@ header {
     flex-wrap: wrap;
 }
 
+.col_12 {
+    width: 100%;
+}
+
+[class^= 'col_'] {
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
 /* #endregion utilities */
 
 /* #region header */
@@ -61,4 +77,43 @@ header {
     align-items: center;
 }
 
-/* #region header */
+/* #endregion header */
+
+
+/* #region main */
+
+/* #demo */
+
+#demo {
+    background-color: var(--white);
+}
+
+/* #/demo */
+
+
+/* #endregion main */
+
+
+/* #region footer */
+
+/* #endregion footer */
+
+/* #region responsive */
+
+@media screen and ( min-width: 1200px) {
+    
+    .col_lg_4 {
+        width: calc(100% / 12 * 4);
+    }
+    
+    .col_lg_6 {
+        width: calc(100% / 12 * 6);
+    }
+
+    #demo .row {
+        justify-content: center;
+    }
+}
+
+/* #endregion responsive */
+
