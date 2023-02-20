@@ -48,12 +48,18 @@ section:nth-child(even) {
 .debug section {
     height: 500px;
 }
+
+.debug .avatar {
+    border: 1px solid var(--black);
+    width: 150px;
+    aspect-ratio: 1/1;
+}
 /* #endregion debug */
 
 /* #region utilities */
 
 .container {
-    max-width: 1152px;
+    max-width: 1080px;
     margin: auto;
 }
 
@@ -101,6 +107,14 @@ section:nth-child(even) {
 
 
 /* #/planning */
+
+/* #partners */
+
+#partners .col_12 {
+    align-items: center;
+}
+
+/* #partners */
 
 
 /* #endregion main */
