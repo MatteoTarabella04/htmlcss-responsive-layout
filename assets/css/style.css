@@ -22,6 +22,10 @@ header {
     height: 60px;
 }
 
+section:nth-child(even) {
+    background-color: var(--violet);
+}
+
 
 /* #endregion COMMON */
 
@@ -41,6 +45,9 @@ header {
     background-color: orange;
 }
 
+.debug section {
+    height: 500px;
+}
 /* #endregion debug */
 
 /* #region utilities */
@@ -89,6 +96,11 @@ header {
 }
 
 /* #/demo */
+
+/* #planning */
+
+
+/* #/planning */
 
 
 /* #endregion main */
