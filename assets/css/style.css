@@ -46,7 +46,7 @@ section:nth-child(even) {
 }
 
 .debug section {
-    height: 500px;
+    height: 800px;
 }
 
 .debug .avatar {
@@ -115,6 +115,14 @@ section:nth-child(even) {
 }
 
 /* #partners */
+
+/* #benefits */
+
+#benefits {
+    margin: 3rem 0;
+}
+
+/* #benefits */
 
 
 /* #endregion main */
