@@ -114,7 +114,7 @@ section:nth-child(even) {
     align-items: center;
 }
 
-/* #partners */
+/* #/partners */
 
 /* #benefits */
 
@@ -122,8 +122,19 @@ section:nth-child(even) {
     margin: 3rem 0;
 }
 
-/* #benefits */
+/* #/benefits */
 
+/* #about-us */
+
+/* #/about-us */
+
+/* #get-started */
+
+#get-started {
+    text-align: center;
+}
+
+/* #/get-started */
 
 /* #endregion main */
 
