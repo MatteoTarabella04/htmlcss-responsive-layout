@@ -26,6 +26,10 @@ section:nth-child(even) {
     background-color: var(--violet);
 }
 
+footer {
+    background-color: var(--foot);
+}
+
 
 /* #endregion COMMON */
 
@@ -130,7 +134,7 @@ section:nth-child(even) {
 
 /* #get-started */
 
-#get-started {
+#get_started {
     text-align: center;
 }
 
@@ -140,6 +144,11 @@ section:nth-child(even) {
 
 
 /* #region footer */
+
+#app_footer {
+    text-align: center;
+    padding: 2rem 0;
+}
 
 /* #endregion footer */
 
