@@ -37,6 +37,7 @@ ul {
 
 button {
     border: none;
+    cursor: pointer;
 }
 
 section:nth-child(even) {
@@ -96,6 +97,7 @@ footer {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -1rem;
 }
 
 .col_12 {
@@ -105,6 +107,10 @@ footer {
 [class^= 'col_'] {
     padding: 0 1rem;
     margin: 1rem 0;
+}
+
+[class^='card_'] {
+    border-radius: 20px;
 }
 
 [class^='card_'] h3{
@@ -145,7 +151,6 @@ footer {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 1rem;
-    cursor: pointer;
 }
 
 /* #endregion header */
@@ -161,7 +166,6 @@ footer {
 
 .card_1, .card_2 {
     background-color: var(--lighter-blue);
-    border-radius: 15px;
     min-height: 100%;
 
 }
@@ -269,8 +273,6 @@ span.icon {
 .arrow_btn {
     background-color: var(--violet);
 
-    cursor: pointer;
-
     margin: 1rem 0;
     padding: 15px 18px;
     border-radius: 50%;
@@ -327,6 +329,44 @@ span.icon {
 
 #benefits {
     margin: 3rem 0;
+    padding-bottom: 5rem;
+}
+
+#benefits h2 {
+    text-align: center;
+    color: var(--white);
+    font-size: 3rem;
+    padding: 3rem 0;
+}
+
+.card_ben {
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 2rem;
+
+    background-color: var(--white);
+}
+
+.card_ben h3 {
+    font-size: 3rem;
+}
+
+.card_ben h3,
+.card_ben strong {
+    color: var(--violet);
+}
+
+.benefits_btn {
+    border-radius: 15px;
+
+    padding: 0.5rem 1rem;
+    width: 40%;
+
+    background-color: var(--violet);
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 /* #/benefits */
