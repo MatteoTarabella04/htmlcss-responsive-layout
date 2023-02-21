@@ -43,6 +43,11 @@ section:nth-child(even) {
     background-color: var(--violet);
 }
 
+section {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
 footer {
     background-color: var(--foot);
 }
@@ -158,10 +163,11 @@ footer {
     background-color: var(--lighter-blue);
     border-radius: 15px;
     min-height: 100%;
+
 }
 
 .left-c {
-    width: 70%;
+    width: 70%; 
     flex-direction: column;
     gap: 1rem;
     padding: 2rem;
@@ -185,7 +191,7 @@ footer {
 }
 
 .right-c {
-    width: 30%;
+    width: 30%; 
     padding-top: 2rem;
 }
 
@@ -202,6 +208,73 @@ span.icon {
 
 /* #planning */
 
+.plan_img {
+    text-align: center;
+}
+
+.plan_img img {
+    padding: 4rem 0;
+}
+
+.plan_desc {
+    color: var(--white);
+    width: 80%;
+    padding-left: 4rem;
+}
+
+.plan_desc h2 {
+    padding: 3rem 0;
+}
+
+.plan_desc p {
+
+    padding-bottom: 3rem;
+    line-height: 1.8;
+    font-size: 15px;
+    
+}
+
+.card_p {
+    width: 80%;
+
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 2rem;
+
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.card_p h2 {
+    padding: 1rem 0;
+}
+
+.card_p p {
+    color: var(--black);
+    font-style: italic;
+}
+
+.flex_plan {
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100%;
+
+    padding-bottom: 3rem;
+}
+
+.arrow_btn {
+    background-color: var(--violet);
+
+    cursor: pointer;
+
+    margin: 1rem 0;
+    padding: 15px 18px;
+    border-radius: 50%;
+}
 
 /* #/planning */
 
@@ -247,23 +320,6 @@ span.icon {
 
 /* #region responsive */
 
-@media screen and ( min-width: 1200px) {
-    
-    .col_lg_4 {
-        width: calc(100% / 12 * 4);
-    }
-    
-    .col_lg_6 {
-        width: calc(100% / 12 * 6);
-    }
-
-    .col_lg_8 {
-        width: calc(100% / 12 * 8);
-    }
-
-}
-
-
 @media screen and ( min-width: 768px) {
 
     .col_md_12 {
@@ -283,6 +339,29 @@ span.icon {
     }
 
 }
+
+@media screen and ( min-width: 1200px) {
+    
+    .col_lg_4 {
+        width: calc(100% / 12 * 4);
+    }
+    
+    .col_lg_6 {
+        width: calc(100% / 12 * 6);
+    }
+
+    .col_lg_8 {
+        width: calc(100% / 12 * 8);
+    }
+
+    .flex_plan_lg {
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+}
+
+
 
 
 /* #endregion responsive */
