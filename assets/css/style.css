@@ -44,7 +44,7 @@ section:nth-child(even) {
     background-color: var(--violet);
 }
 
-section {
+section:not(:last-child) {
     margin-bottom: 4rem;
     margin-top: 2rem;
 }
@@ -428,6 +428,50 @@ span.icon {
     text-align: center;
 }
 
+#get_started .flex {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+    color: var(--white);
+}
+
+.first_gs {
+    text-transform: uppercase;
+    text-shadow: 1px 3px var(--gray);
+    padding-top: 4rem;
+}
+
+#get_started .flex h3 {
+    font-size: 2rem;
+}
+
+#get_started .flex p {
+    width: 35%;
+}
+
+.y {
+    font-size: 4rem;
+    color: var(--yellow);
+}
+
+.btn_start {
+
+    padding: 1rem 2rem;
+    color: var(--violet);
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+#get_started a {
+    color: var(--white);
+}
+
+#get_started p:last-child {
+    margin-bottom: 2rem;
+}
+
+
 /* #/get-started */
 
 /* #endregion main */
@@ -444,7 +488,19 @@ span.icon {
 
 /* #region responsive */
 
+@media screen and ( max-width: 480px) {
+
+    .container {
+        width: 80%;
+    }
+    
+}
+
 @media screen and ( min-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
 
     .col_md_12 {
         width: 100%;
@@ -491,6 +547,10 @@ span.icon {
 }
 
 @media screen and ( min-width: 1200px) {
+
+    .container {
+        width: 100%;
+    }
     
     .col_lg_4 {
         width: calc(100% / 12 * 4);
@@ -536,6 +596,8 @@ span.icon {
     }
 
 }
+
+
 
 
 
