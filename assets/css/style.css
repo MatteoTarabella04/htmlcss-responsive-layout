@@ -140,19 +140,62 @@ footer {
 
 #app_header a {
     text-decoration: none;
-    color: var(--white);
 }
 
+
 .link_list {
-    gap: 1rem;
-    align-items: baseline;
+    display: none;
+
 }
 
 .btn-w {
+    background-color: var(--blue);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 1rem;
 }
+
+
+.menu {
+    display: inline-block;
+}
+
+.menu i {
+    color: var(--white);
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    right: 30px;
+    background-color: var(--blue);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+}
+
+.menu-content a {
+    color: var(--white);
+    padding: 12px 16px;
+    display: block;
+}
+
+.menu-content a:last-child {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.menu-content a:hover {
+    background-color: var(--lighter-blue);
+}
+
+.menu-content a:last-child:hover {
+    color: var(--white);
+}
+
+.menu:hover .menu-content {
+    display: block;
+  }
 
 /* #endregion header */
 
@@ -516,7 +559,7 @@ span.icon {
     
 }
 
-@media screen and ( min-width: 768px) {
+@media screen and ( min-width: 767px) {
 
     .container {
         width: 95%;
@@ -543,7 +586,7 @@ span.icon {
     }
 
     .right-c-md {
-        width: 30%;
+        width: 40%;
     }
 
     .part_card_lg {
@@ -590,6 +633,28 @@ span.icon {
 
     .col_lg_8 {
         width: calc(100% / 12 * 8);
+    }
+
+    .link_list_show {
+        display: flex;
+
+        gap: 1rem;
+        align-items: baseline;
+    }
+
+    .link_list_show a {
+        color: var(--white);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .btn-w-hide {
+        background-color: var(--white);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 1rem;
     }
 
     .card_1_lg {
