@@ -166,13 +166,13 @@ footer {
 }
 
 .card_1, .card_2 {
+    flex-direction: column;
     background-color: var(--lighter-blue);
     min-height: 100%;
 
 }
 
 .left-c {
-    width: 70%; 
     flex-direction: column;
     gap: 1rem;
     padding: 2rem;
@@ -195,8 +195,7 @@ footer {
     border-radius: 15px;
 }
 
-.right-c {
-    width: 30%; 
+.right-c { 
     padding-top: 2rem;
 }
 
@@ -539,6 +538,14 @@ span.icon {
         width: calc(100% / 12 * 8);
     }
 
+    .card_1_md {
+        flex-direction: column;
+    }
+
+    .right-c-md {
+        width: 30%;
+    }
+
     .part_card_lg {
         flex-direction: row; 
     }
@@ -583,6 +590,14 @@ span.icon {
 
     .col_lg_8 {
         width: calc(100% / 12 * 8);
+    }
+
+    .card_1_lg {
+        flex-direction: row;
+    }
+
+    .right-c-lg {
+        width: 100%;
     }
 
     .flex_plan_lg {
