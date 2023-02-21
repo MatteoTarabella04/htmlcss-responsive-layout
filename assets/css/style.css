@@ -329,7 +329,7 @@ span.icon {
 
 #benefits {
     margin: 3rem 0;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 #benefits h2 {
@@ -373,6 +373,53 @@ span.icon {
 
 /* #about-us */
 
+#about_us h2:first-child {
+    font-size: 3rem;
+    color: var(--violet);
+    padding: 0 1rem;
+}
+
+#about_us p {
+    
+    padding: 2rem 1rem ;
+    line-height: 2.5;
+}
+
+.about_help {
+    position: relative;
+}
+
+.about_img {
+    padding: 0 2rem;
+    border-radius: 50%;
+    width: 30%;
+}
+
+.about_help i {
+    color: var(--violet);
+    position: absolute;
+    top: 0px;
+    left: 155px;
+}
+
+.help {
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.btn_about{
+    width: 50%;
+    padding: 0.5rem 1rem;
+}
+
+.help_title {
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--violet);
+    width: 50%;
+}
+
+
 /* #/about-us */
 
 /* #get-started */
@@ -411,7 +458,7 @@ span.icon {
         width: calc(100% / 12 * 6);
     }
 
-    .col_lg_8 {
+    .col_md_8 {
         width: calc(100% / 12 * 8);
     }
 
@@ -425,6 +472,20 @@ span.icon {
 
     #partners .col_12 p {
         text-align: left;
+    }
+
+    .ab_img_md {
+        width: 50%;
+    }
+
+    .about_help_md i {
+        top: 0px;
+        right: 65px;
+    }
+
+    .btn_abo_lg_md {
+        margin-top: 1rem;
+        width: 85%;
     }
 
 }
@@ -454,6 +515,24 @@ span.icon {
 
     .part_card_lg img {
         width: 20%;
+    }
+
+    .ab_img_lg {
+        width: 70%;
+    }
+
+    .about_help_lg i {
+        top: 0px;
+        right: 50px;
+    }
+
+    .help_title {
+        width: 100%;
+        padding: 0;
+    }
+
+    .btn_abo_lg_md {
+        width: 90%;
     }
 
 }
