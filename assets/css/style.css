@@ -383,7 +383,7 @@ span.icon {
         width: 20%;
     }
 
-    #partners p {
+    #partners .col_12 p {
         text-align: left;
     }
 
