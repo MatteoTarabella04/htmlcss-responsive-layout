@@ -280,8 +280,36 @@ span.icon {
 
 /* #partners */
 
-#partners .col_12 {
+#partners p {
+    text-align: center;
+    padding: 0 3rem;
+    line-height: 1.8;
+}
+
+#partners h2 {
+    color: var(--violet);
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.part_card {
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    background-color: var(--violet);
+    border-radius: 20px;
+
+    padding: 1rem;
+
+    color: var(--white);
+}
+
+.part_card img {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 30%;
 }
 
 /* #/partners */
@@ -338,6 +366,14 @@ span.icon {
         width: calc(100% / 12 * 8);
     }
 
+    .part_card_lg {
+        flex-direction: row; 
+    }
+
+    .part_card_lg img {
+        width: 20%;
+    }
+
 }
 
 @media screen and ( min-width: 1200px) {
@@ -357,6 +393,14 @@ span.icon {
     .flex_plan_lg {
         align-items: flex-end;
         justify-content: flex-start;
+    }
+
+    .part_card_lg {
+        flex-direction: row; 
+    }
+
+    .part_card_lg img {
+        width: 20%;
     }
 
 }
