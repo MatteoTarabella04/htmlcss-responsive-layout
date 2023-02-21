@@ -88,6 +88,7 @@ footer {
 .container {
     max-width: 1080px;
     margin: auto;
+    overflow: hidden;
 }
 
 .flex {
@@ -482,7 +483,27 @@ span.icon {
 #app_footer {
     text-align: center;
     padding: 2rem 0;
+    color: var(--white);
 }
+
+.foot {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 3rem;
+}
+
+.foot p {
+    width: 30%;
+    font-size: 12px;
+}
+
+.foot a {
+    color: var(--violet);
+}
+
+
 
 /* #endregion footer */
 
